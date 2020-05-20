@@ -2,4 +2,4 @@
 ---
 language: java
 install: ant deps
-before_script: cd Calc
+before_install: cd Calc
