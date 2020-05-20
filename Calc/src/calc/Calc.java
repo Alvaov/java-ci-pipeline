@@ -17,7 +17,7 @@ import javafx.stage.Stage;
  *
  * @author domtaxx
  */
-public class Calculadora extends Application {
+public class Calc extends Application {
     
     @Override
     public void start(Stage primaryStage) {
