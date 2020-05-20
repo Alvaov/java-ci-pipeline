@@ -2,4 +2,3 @@
 ---
 language: java
 before_script: cd Calc
-script: ant src/calc/Calc.java
