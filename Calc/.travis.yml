@@ -4,5 +4,6 @@ language: java
 jdk:
   - openjdk8
 install: ant deps
+script: ant main
 deploy:
   skip_cleanup: true
