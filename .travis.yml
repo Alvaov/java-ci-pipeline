@@ -1,4 +1,4 @@
 ## YAML Template.
 ---
 language: java
-script: ant calc.java
+script: ant main
