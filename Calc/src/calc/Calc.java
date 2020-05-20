@@ -28,6 +28,7 @@ public class Calc extends Application {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
+                
             }
         });
         
@@ -39,6 +40,7 @@ public class Calc extends Application {
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.close();
     }
 
     /**
