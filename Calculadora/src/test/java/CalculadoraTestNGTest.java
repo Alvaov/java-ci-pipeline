@@ -4,21 +4,17 @@
  * and open the template in the editor.
  */
 
-import calc.Calc;
+import com.mycompany.calculadora.Calculadora;
 import static org.testng.Assert.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author domtaxx
  */
-public class CalcTestNGTest {
+public class CalculadoraTestNGTest {
     
-    public CalcTestNGTest() {
+    public CalculadoraTestNGTest() {
     }
 
     // TODO add test methods here.
@@ -27,29 +23,29 @@ public class CalcTestNGTest {
     // @Test
     // public void hello() {}
 
-    @BeforeClass
+    @org.testng.annotations.BeforeClass
     public static void setUpClass() throws Exception {
     }
 
-    @AfterClass
+    @org.testng.annotations.AfterClass
     public static void tearDownClass() throws Exception {
     }
 
-    @BeforeMethod
+    @org.testng.annotations.BeforeMethod
     public void setUpMethod() throws Exception {
     }
 
-    @AfterMethod
+    @org.testng.annotations.AfterMethod
     public void tearDownMethod() throws Exception {
     }
     @Test
-    public void sumaTest(){
-        Calc calc = new Calc();
-        int a, b, res, expRes;
-        a=7;
-        b=9;
-        res = calc.sumar(a, b);
-        expRes = a+b;
-        assertEquals(expRes, res);
+    public void testSuma(){
+        int a = 6;
+        int b = 9;
+        int res = a+b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.sumar(a, b);
+        assertEquals(res, expRes);
     }
 }

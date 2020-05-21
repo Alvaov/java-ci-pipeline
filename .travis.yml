@@ -1,4 +1,6 @@
 ## YAML Template.
 ---
 language: java
-before_script: cd Calc
+jdk:
+  - openjdk8
+before_script: cd Calculadora
