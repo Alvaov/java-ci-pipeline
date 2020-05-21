@@ -1,5 +1,6 @@
 ## YAML Template.
 ---
 language: java
+before_install: cd java
 install: ant deps
-after_install: cd Calc
+before_script: cd Calc
