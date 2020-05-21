@@ -48,4 +48,74 @@ public class CalculadoraTestNGTest {
         expRes = calc.sumar(a, b);
         assertEquals(res, expRes);
     }
+    @Test
+    public void testSuma2(){
+        int a = 6;
+        int b = 6;
+        int res = a+b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.sumar(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testResta(){
+        int a = 6;
+        int b = 9;
+        int res = a-b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.restar(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testResta2(){
+        int a = 8;
+        int b = 9;
+        int res = a-b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.restar(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testDividir(){
+        int a = 3;
+        int b = 1;
+        int res = a/b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.dividir(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testDividir2(){
+        int a = 18;
+        int b = 9;
+        int res = a/b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.dividir(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testMultiplicar(){
+        int a = 6;
+        int b = 3;
+        int res = a*b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.multiplicar(a, b);
+        assertEquals(res, expRes);
+    }
+    @Test
+    public void testMultiplicar2(){
+        int a = 6;
+        int b = 9;
+        int res = a*b;
+        int expRes;
+        Calculadora calc = new Calculadora();
+        expRes = calc.multiplicar(a, b);
+        assertEquals(res, expRes);
+    }
 }
